@@ -35,5 +35,10 @@ initial begin
 
   // 시뮬레이션 종료
   $finish;
+end
+//결과 모니터링
+initial begin
+  $monitor("시간=%t, 입력 a=%b, 출력 y=%b",$time,a,b,y);
+  end
   endmodule
   
